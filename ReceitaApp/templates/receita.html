@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{receita.nome}}</h1>
+    <div><b>ingredientes:</b> {{ receita.ingredientes|linebreaks }}</div>
+    <br><br>
+    <div><b>Modo de preparo: {{ receita.preparo}}</b></div>
+    <br><br>
+    <div><b>dificuldade</b> {{receita.dificuldade }}</div>
+</body>
+</html>

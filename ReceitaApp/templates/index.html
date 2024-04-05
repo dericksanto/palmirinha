@@ -8,5 +8,12 @@
 <body>
     <div>Página inicial</div>
     <a href="/receitas">Página de receitas</a>
+
+    <ul>
+        {% for categoria in categorias %}
+                <li>{{ categoria.nome }}</li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>

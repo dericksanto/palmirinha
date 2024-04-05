@@ -17,4 +17,4 @@ class Receita(models.Model):
     ingredientes = models.TextField(max_length=2000)
     preparo = models.TextField(max_length=8000)
     dificuldade = models.CharField(max_length=10, blank=True, null=True, choices=Dificuldades)
-    Categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, null=True)
+    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, null=True)

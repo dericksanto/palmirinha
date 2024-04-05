@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>  TE AMO PROF </h1>
-    <!-- Tags de Template-->
-    Endereço de {{ nome }} <br>
-    {{Endereco}}, {{Bairro}} - {{Cidade}} - {{Estado}}
-
-    <div>
-        ingredientes:
+<h1>Receitas da Palmirinha!</h1>
         <ul>
-            {% for ing in Ingredientes %}
-                <li>{{ ing }}</li>
+            {% for receita in receitas %}
+            <li><a href='/receita/{{ receita.id }}'>{{ receita.nome }}</a> ({{ receita.dificuldade }})</li>
             {% endfor %}
         </ul>
-    </div>
 </body>
 </html>
